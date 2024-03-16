@@ -1,14 +1,21 @@
 import 'package:logger/logger.dart';
 
-main(){
-  var str="hello world! 👋🏿";
+main() {
+  var str = "hello world! 👋🏿";
 
-  Iterable<int> ruines=str.runes;
+  Iterable<int> ruines = str.runes;
 
-  for(int ruine in ruines){
+  for (int ruine in ruines) {
     print(ruine);
-    Logger logger=Logger();
-    logger.i(ruine);
   }
 
+  for (int codeUnit in str.codeUnits) {
+    Logger logger = Logger();
+
+    if (codeUnit % 2 == 0) {
+      logger.i(codeUnit);
+    } else {
+      logger.w(codeUnit);
+    }
+  }
 }
