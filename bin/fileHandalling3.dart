@@ -8,7 +8,7 @@ void main() async {
   print("Enter file name to append:");
   String? fileName = stdin.readLineSync();
 
-  if(fileName!.isNotEmpty){
+  if (fileName!.isNotEmpty) {
     //check if file is exist
     File file = File("${fileName}.txt");
     if (await file.exists()) {
@@ -19,9 +19,7 @@ void main() async {
     } else {
       logger.w("$fileName.txt is not exist");
     }
-  }else{
+  } else {
     logger.e("Oooops... Enter file name first then try to write.");
   }
-
-
 }
