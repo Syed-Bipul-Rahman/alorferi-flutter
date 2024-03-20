@@ -114,17 +114,20 @@ main() {
   for (var country in countries) {
     if (country.startsWith("A")) {
       print("$country is start with \"A\"");
-   
     }
   }
 
-  var s=[10,20,30,40,50,60,80];
-  for ( var y in s){
+  var s = [10, 20, 30, 40, 50, 60, 80];
+  for (var y in s) {
     print(y);
   }
 
+//controlling over infinite loop
+  for (var i = 1; 10 > 2; i++) {
+    print("Hi 👋");
 
-
-
-
+    if (i == 10) {
+      break;
+    }
+  }
 }
