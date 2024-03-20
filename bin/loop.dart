@@ -116,11 +116,12 @@ main() {
       print("$country is start with \"A\"");
     }
   }
-
+var totalForArray=0;
   var s = [10, 20, 30, 40, 50, 60, 80];
   for (var y in s) {
-    print(y);
+  totalForArray+=y;
   }
+  print(totalForArray);
 
 //controlling over infinite loop
   for (var i = 1; 10 > 2; i++) {
