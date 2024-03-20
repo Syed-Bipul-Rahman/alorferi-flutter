@@ -25,14 +25,28 @@ main() {
   // }
 
   //typing effect with loop and duration
-  var name="Syed Bipul Rahman";
+  // var name="Syed Bipul Rahman";
+  //
+  // for(var i=0; i<name.length; i++){
+  //   // print(name[i]);
+  //   sleep(Duration(milliseconds: 250));
+  //   stdout.write(name[i]);
+  // }
 
-  for(var i=0; i<name.length; i++){
-    // print(name[i]);
-    sleep(Duration(milliseconds: 250));
-    stdout.write(name[i]);
+//for .. in loop
+  var status = "Your array items are: ";
+  var i = [10, 20, 30, 40, 50, 60];
+  for (var y = 0; y < status.length; y++) {
+    stdout.write(status[y]);
+    sleep(Duration(milliseconds: 200));
   }
 
+  for (var x = 0; x < i.length; x++) {
+    stdout.write("${i[x]} ");
+    sleep(Duration(milliseconds: 200));
+  }
+
+  
 
 
 }
