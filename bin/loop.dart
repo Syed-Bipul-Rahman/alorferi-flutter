@@ -33,20 +33,98 @@ main() {
   //   stdout.write(name[i]);
   // }
 
-//for .. in loop
-  var status = "Your array items are: ";
-  var i = [10, 20, 30, 40, 50, 60];
-  for (var y = 0; y < status.length; y++) {
-    stdout.write(status[y]);
-    sleep(Duration(milliseconds: 200));
+//play with duration
+//   var status = "Your array items are: ";
+//   var i = [10, 20, 30, 40, 50, 60];
+//   for (var y = 0; y < status.length; y++) {
+//     stdout.write(status[y]);
+//     sleep(Duration(milliseconds: 200));
+//   }
+//
+//   for (var x = 0; x < i.length; x++) {
+//     stdout.write("${i[x]} ");
+//     sleep(Duration(milliseconds: 200));
+//   }
+//
+//
+
+//for in loop
+  var countries = [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Austria",
+    "Azerbaijan",
+    "Bahamas",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Central African Republic",
+    "Chad",
+    "Chile",
+    "China",
+    "Colombia",
+    "Comoros",
+    "Congo",
+    "Costa Rica",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Eswatini",
+    "Ethiopia",
+    "Fiji",
+    "Finland",
+    "France"
+  ];
+
+  for (var country in countries) {
+    if (country.startsWith("A")) {
+      print("$country is start with \"A\"");
+   
+    }
   }
 
-  for (var x = 0; x < i.length; x++) {
-    stdout.write("${i[x]} ");
-    sleep(Duration(milliseconds: 200));
+  var s=[10,20,30,40,50,60,80];
+  for ( var y in s){
+    print(y);
   }
 
-  
+
+
 
 
 }
